@@ -1,0 +1,9 @@
+import "std.zc";
+
+fn main() -> int {
+    let square = num -> num * num;
+    let result: int = square(n: 3);
+
+    println "{result}";
+    return 0;
+}

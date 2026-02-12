@@ -1,0 +1,40 @@
+
+// line comment
+
+import "std/vec.zc";
+
+/*  block
+    comment
+*/
+
+def NAME: string = "John";
+
+let (first: string, last: string) = (NAME, "Doe");
+
+struct User {
+    login: string;
+    id: u32;
+}
+
+opaque alias ID = u32;
+
+enum Shape {
+    Circle(float),
+    Rectangle(float, float),
+    Point
+}
+
+union Data {
+    i: int;
+    f: float;
+}
+
+fn main() -> int {
+    
+    let x: const int = 10;
+
+    let double = x -> x * 2;
+    let square = fn(x: int) -> int { return x * x; };
+
+    return 0;
+}

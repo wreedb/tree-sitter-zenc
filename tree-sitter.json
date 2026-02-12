@@ -1,0 +1,42 @@
+{
+    "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+    "grammars": [
+        {
+            "name": "zenc",
+            "camelcase": "ZenC",
+            "title": "Zen-C",
+            "scope": "source.zenc",
+            "file-types": ["zc"],
+            "injection-regex": "^zenc$",
+            "class-name": "TreeSitterZenc",
+            "highlights": "queries/highlights.scm",
+            "indents": "queries/indents.scm"
+        }
+    ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "LGPL-3.0-or-later",
+    "description": "Tree-sitter grammar for Zen-C",
+    "authors": [
+      {
+        "name": "Will Reed",
+        "email": "wreed@disroot.org",
+        "url": "https://wreedb.github.io"
+      }
+    ],
+    "links": {
+      "repository": "https://codeberg.org/wreedb/tree-sitter-zenc",
+      "funding": ""
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": true
+  }
+}

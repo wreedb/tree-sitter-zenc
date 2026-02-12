@@ -1,0 +1,13 @@
+fn addfive(x: int) -> int {
+    let result: int;
+
+    asm volatile {
+        "mov {x}, {result}"
+        "add $5, {result}"
+        : out(result)
+        : in(x)
+        : clobber("cc")
+    }
+
+    return result;
+}

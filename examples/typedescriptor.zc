@@ -1,0 +1,10 @@
+import "std/vec.zc";
+import "std/string.zc";
+
+fn main() -> int {
+
+    let names: const Vec<String>;
+
+    return 0;
+
+}
